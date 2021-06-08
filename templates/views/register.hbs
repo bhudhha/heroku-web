@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    {{>header}}
+</head>
+
+<body>
+    {{>nav}}
+    <div class="con">
+        <div class="sec1">
+            <h1>Registration</h1>
+        </div>
+        <div class="sec2">
+            <form action="/register" method="POST">
+                <div class="form_register">
+                    <div class="righthand">
+                        <div class="data">
+                            <input type="text" class="formdata" name="firstname" placeholder="First Name" value="">
+                        </div>
+                        <div class="data">
+                            <input type="email" class="formdata" name="email" placeholder="Enter your Email" value="">
+                        </div>
+                        <div class="data">
+                            <input type="text" class="formdata" name="phone" minlength="10" maxlength="10" placeholder="Enter your phone number"
+                                value="">
+                        </div>
+                        <div class="data">
+                            <input type="password" class="formdata" name="password" placeholder="Enter your Password"
+                                value="">
+                        </div>
+                    </div>
+                    <div class="righthand">
+                        <div class="data">
+                            <input type="text" class="formdata" name="lastname" placeholder="Last Name" value="">
+                        </div>
+                        <div class="data" id="iddata">
+                            <div>
+                                <p>Gender</p>
+                            </div>
+                            <div>
+                                <label for="">male</label>
+                                <input type="radio" name="gender" value="male" placeholder="male" checked>
+                            </div>
+                            <div>
+                                <label for="">female</label>
+                                <input type="radio" name="gender" value="female" placeholder="famale">
+                            </div>
+
+                        </div>
+                        <div class="data">
+                            <input type="text" class="formdata" name="age" placeholder="Enetr your age" value="">
+                        </div>
+                        <div class="data">
+                            <input type="password" class="formdata" name="confirmpassword" placeholder="Confirm Password" value="">
+                        </div>
+                    </div>
+
+                </div>
+                <input type="submit" class="btnform" value="Register">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
