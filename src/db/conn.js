@@ -1,7 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/reg", {
-    // useFindAndModify: false,
+
+// const MONGODB_URL='mongodb+srv://Rahul_user:rahulkumar@rahul.qsswr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
+mongoose.connect(process.env.MONGODB_URL, {
+    useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true

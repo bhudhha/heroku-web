@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {{>header}}
+</head>
+<body>
+    {{>nav}}
+    <div class="login-box">
+        <form action="/login" method="POST">
+        <ul>
+            <ol>
+        <input type="text" class="login-input" name="email" placeholder="Email" required  >
+        </ol>
+        <ol>
+        <input type="password"  class="login-input" name="password" placeholder="Password" required>
+        </ol>
+        </ul>
+        <input type="submit" class="btnform" value="login">
+        </form>
+    </div>
+</body>
+</html>
